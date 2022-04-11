@@ -1,0 +1,45 @@
+html {
+  margin-top: 0;
+}
+
+.header {
+  position: static;
+  padding: 27px 0;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 40px;
+  padding: 60px 0;
+}
+
+.paginator {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  .btn {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: transparent;
+  }
+  .btn--primary{
+    background-color: #F1CDB3;
+  }
+  .btn:hover:not(:disabled) {
+    background-color: #fddcc4;
+  }
+  .btn:disabled {
+    color: #cdcdcd;
+  }
+}
