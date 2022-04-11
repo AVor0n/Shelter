@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/pets.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Shelter</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="wrapper">
+        <div class="logo header__logo logo--dark">
+          <h1 class="logo__title">Cozy House</h1>
+          <span class="logo__subtitle">Shelter for pets in Boston</span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="link nav__link link--dark">About the shelter</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pets.html" class="link nav__link link--dark link--active"
+                >Our pets</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="./index.html#help" class="link nav__link link--dark"
+                >Help the shelter</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="#footer" class="link nav__link link--dark">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="our-friends">
+      <div class="wrapper">
+        <h3 class="title">Our friends who<br/>are looking for a house</h3>
+        <div class="slider">
+          <div class="slider__card">
+            <img src="./assets/img/pets/katrine.png" alt="katrine" class="slider__card-img" />
+            <p class="slider__card-title">Katrine</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img
+              src="./assets/img/pets/jennifer.png"
+              alt="jennifer"
+              class="slider__card-img"
+            />
+            <p class="slider__card-title">Jennifer</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/woody.png" alt="woody" class="slider__card-img" />
+            <p class="slider__card-title">Woody</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/sophia.png" alt="sophia" class="slider__card-img" />
+            <p class="slider__card-title">Sophia</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/timmy.png" alt=timmy" class="slider__card-img">
+            <p class="slider__card-title">Timmy</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/charly.png" alt=charly" class="slider__card-img">
+            <p class="slider__card-title">Charly</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/scarlett.png" alt=scarlett" class="slider__card-img">
+            <p class="slider__card-title">Scarlett</p>
+            <button class="btn">Learn more</button>
+          </div>
+
+          <div class="slider__card">
+            <img src="./assets/img/pets/freddie.png" alt=freddie" class="slider__card-img">
+            <p class="slider__card-title">Freddie</p>
+            <button class="btn">Learn more</button>
+          </div>
+        </div>
+        <div class="paginator">
+          <button class="btn btn--circle" disabled><<</button>
+          <button class="btn btn--circle" disabled><</button>
+          <button class="btn btn--circle btn--primary">1</button>
+          <button class="btn btn--circle">></button>
+          <button class="btn btn--circle">>></button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="wrapper">
+        <div>
+          <h3 class="title">For questions<br/>and suggestions</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="link footer__link link--mail" href="mailto:email@shelter.com"
+                >email@shelter.com</a
+              >
+            </li>
+            <li class="footer__item">
+              <a class="link footer__link link--tel" href="tel:+13 674 567 75 54"
+                >+13 674 567 75 54</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="title">We are waiting<br/>for your visit</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a
+                class="link footer__link link--place"
+                style="margin-top: 32px"
+                target="_blank"
+                href="https://www.google.com/maps/place/1+Centre+St+Terrace,+Boston,+MA+02119,+USA/@42.326014,-71.0962658,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37a29f109ad67:0x3c3f6a5c559c7586!8m2!3d42.326022!4d-71.0963194"
+                >1 Central Street, Boston<br/>(entrance from the store)</a
+              >
+            </li>
+            <li class="footer__item">
+              <a
+                class="link footer__link link--place"
+                style="margin-top: 32px"
+                target="_blank"
+                href="https://www.google.com/maps/place/18+S+Park+Cres,+London+SE6+1JW,+UK/@51.4424531,0.0036272,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a9e35f520529:0x8d1b5611767e32ec!8m2!3d51.4424531!4d0.0058159"
+                >18 South Park, London
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img class="footer__img" src="./assets/img/footer-puppy.png" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal hidden">
+      <div class="wrapper">
+        <div class="btn btn--circle">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003V6.00003Z"
+              fill="#292929"
+            />
+          </svg>
+        </div>
+        <img
+          src="./assets/img/pets/jennifer.png"
+          alt="Jennifer"
+          class="img"
+          width="500"
+          height="500"
+        />
+        <div class="content">
+          <h3 class="title" data-prop="name">Jennifer</h3>
+          <h4 class="subtitle" data-prop="type">Dog - Labrador</h4>
+          <p class="desc" data-prop="description">
+            Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new
+            forever home. This girl really enjoys being able to go outside to run and play, but
+            won't hesitate to play up a storm in the house if she has all of her favorite toys.
+          </p>
+          <ul class="list">
+            <li class="item"><span><b>Age:</b> <span data-prop="age">2 month</span></li></span>
+            <li class="item"><span><b>Inoculations:</b> <span data-prop="inoculations">none</span></li></span>
+            <li class="item"><span><b>Disease:</b> <span data-prop="disease">none</span></li></span>
+            <li class="item"><span><b>Parasites:</b> <span data-prop="parasites">none</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
+  </body>
+</html>
