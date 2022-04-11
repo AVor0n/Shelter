@@ -542,17 +542,17 @@ h5, .modal .desc {
 }
 
 .link--mail::before {
-  background-image: url("./../../../assets/svg/icon-email.svg");
+  background-image: url("./../assets/svg/icon-email.svg");
   min-width: 40px;
 }
 
 .link--tel::before {
-  background-image: url("./../../../assets/svg/icon-phone.svg");
+  background-image: url("./../assets/svg/icon-phone.svg");
   min-width: 40px;
 }
 
 .link--place::before {
-  background-image: url("./../../../assets/svg/icon-marker.svg");
+  background-image: url("./../assets/svg/icon-marker.svg");
   min-width: 22px;
 }
 
@@ -652,12 +652,12 @@ html {
 
 #not-only {
   padding-top: 180px;
-  background: url("./../../assets/img/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background: url("./../assets/img/noise_transparent@2x.png"), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
 }
 
 #not-only .wrapper {
   padding: 163px 0 243px;
-  background: url("./../../../assets/img/start-screen-puppy.png");
+  background: url("./../assets/img/start-screen-puppy.png");
   background-position: top right;
   background-repeat: no-repeat;
   background-size: 698px 728px;
@@ -689,7 +689,7 @@ html {
 }
 
 #about .wrapper {
-  background: url("./../../../assets/img/about-pets.png");
+  background: url("./../assets/img/about-pets.png");
   background-repeat: no-repeat;
   background-position: 175px 0;
   background-size: 300px 408px;
@@ -881,7 +881,7 @@ html {
 }
 
 #donation .wrapper {
-  background: url("./../../../assets/img/donation-dog.png");
+  background: url("./../assets/img/donation-dog.png");
   background-repeat: no-repeat;
   background-position: 143px 11px;
   background-size: 505px 261px;
@@ -939,7 +939,7 @@ html {
 
 #donation .card-num::before {
   content: '';
-  background-image: url("./../../../assets/svg/icon-credit-card.svg");
+  background-image: url("./../assets/svg/icon-credit-card.svg");
   background-repeat: no-repeat;
   width: 30px;
   height: 23px;
@@ -952,7 +952,7 @@ html {
 }
 
 .footer {
-  background: url("./../../assets/img/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  background: url("./../assets/img/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
   padding-top: 40px;
   line-height: 0;
 }

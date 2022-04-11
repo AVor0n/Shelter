@@ -88,17 +88,17 @@
   }
 
   &--mail::before {
-    background-image: url('./../../../assets/svg/icon-email.svg');
+    background-image: url('./../assets/svg/icon-email.svg');
     min-width: 40px;
   }
 
   &--tel::before {
-    background-image: url('./../../../assets/svg/icon-phone.svg');
+    background-image: url('./../assets/svg/icon-phone.svg');
     min-width: 40px;
   }
 
   &--place::before {
-    background-image: url('./../../../assets/svg/icon-marker.svg');
+    background-image: url('./../assets/svg/icon-marker.svg');
     min-width: 22px;
   }
 }
