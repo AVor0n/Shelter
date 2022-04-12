@@ -318,18 +318,19 @@ html {
     .cardnum-notification {
       opacity: 0;
       pointer-events: none;
-      transition: opacity 0.3s;
+      transition: opacity 0.5s;
       position: absolute;
       top: -10px;
       right: 3px;
-      background: #fddcc4;
+      background: #51ee08d8;
       border-radius: 5px;
       font-size: 16px;
       padding: 5px;
-      color: #545454;
-      .visible {
-        opacity: 1;
-      }
+      color: #f8f8f8;
+    }
+
+    .visible {
+      opacity: 1;
     }
   }
   .card-num {
