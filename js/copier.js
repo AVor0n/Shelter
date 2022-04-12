@@ -1,12 +1,11 @@
 const field = document.querySelector('.cardnum-field');
-console.log("🚀 ~ file: copier.js ~ line 2 ~ field", field)
+const cardnum = document.querySelector('.card-num');
 const notification = document.querySelector('.cardnum-notification');
-console.log("🚀 ~ file: copier.js ~ line 4 ~ notification", notification)
 
 field.onclick = () => {
-  document.execCommand("copy");
+  window.navigator.clipboard.writeText(cardnum.textContent)
   notification.classList.add('visible');
   setTimeout(() => {
     notification.classList.remove('visible');
-  }, 1500);
+  }, 1000);
 };
