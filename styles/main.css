@@ -585,6 +585,11 @@ html {
           justify-content: space-between;
 }
 
+.logo__link {
+  display: inline-block;
+  text-decoration: none;
+}
+
 .logo__title {
   font-family: 'Georgia';
   font-size: 32px;

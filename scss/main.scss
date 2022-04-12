@@ -26,6 +26,10 @@ html {
 }
 
 .logo {
+  &__link{
+    display: inline-block;
+    text-decoration: none;
+  }
   &__title {
     font-family: 'Georgia';
     font-size: 32px;

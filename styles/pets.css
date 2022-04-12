@@ -47,8 +47,29 @@ html {
   background-color: transparent;
 }
 
-.paginator .btn--primary {
-  background-color: #F1CDB3;
+.paginator .nobtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #f1cdb3;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: #f1cdb3;
+  border-radius: 50%;
+  padding: 0;
+  width: 52px;
+  height: 52px;
 }
 
 .paginator .btn:hover:not(:disabled) {
