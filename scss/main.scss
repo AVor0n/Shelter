@@ -26,7 +26,7 @@ html {
 }
 
 .logo {
-  &__link{
+  &__link {
     display: inline-block;
     text-decoration: none;
   }
@@ -224,7 +224,7 @@ html {
   }
   .btn {
     background-color: #ffffff;
-    &:disabled{
+    &:disabled {
       background-color: #ffffff;
     }
     &:hover:not(:disabled) {
@@ -304,12 +304,33 @@ html {
     margin: 0;
   }
 
-  .textfield {
+  .cardnum-field {
     padding: 10px 15px;
     background: #f1cdb3;
     border-radius: 9px;
     display: flex;
     align-items: center;
+    position: relative;
+    &:hover {
+      background: #fddcc4;
+      cursor: pointer;
+    }
+    .cardnum-notification {
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      position: absolute;
+      top: -10px;
+      right: 3px;
+      background: #fddcc4;
+      border-radius: 5px;
+      font-size: 16px;
+      padding: 5px;
+      color: #545454;
+      .visible {
+        opacity: 1;
+      }
+    }
   }
   .card-num {
     @extend h4;
