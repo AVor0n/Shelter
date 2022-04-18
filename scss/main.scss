@@ -99,6 +99,10 @@ html {
 
   .wrapper {
     padding: 163px 0 243px;
+      background: url('./../assets/img/start-screen-puppy.png');
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: 698px 728px;
   }
 
   .content {
@@ -120,19 +124,16 @@ html {
   .btn {
     letter-spacing: 0.05em;
   }
-  .background{
-    .background{
-      background: url('./../assets/img/start-screen-puppy.png') no-repeat right bottom;
-      width:698px;
-      height: 728px;
-      background-size: cover;
-    }
-  }
 }
 
 #about {
   padding: 80px 0 84px;
-
+  .wrapper {
+    background: url('./../assets/img/about-pets.png');
+    background-repeat: no-repeat;
+    background-position: 175px 0;
+    background-size: 300px 408px;
+  }
   .content {
     max-width: 430px;
     padding: 14px 0;
@@ -273,7 +274,12 @@ html {
 #donation {
   padding: 80px 0 100px;
   background-color: #f6f6f6;
-
+  .wrapper {
+    background: url('./../assets/img/donation-dog.png');
+    background-repeat: no-repeat;
+    background-position: 143px 11px;
+    background-size: 505px 261px;
+  }
   .content {
     max-width: 380px;
     margin-left: auto;
@@ -365,7 +371,7 @@ html {
     list-style: none;
     padding: 0;
   }
-  &__link {
+  a.footer__link {
     font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
@@ -438,5 +444,12 @@ html {
       background-color: #f1cdb3;
       margin-right: 10px;
     }
+  }
+}
+@media(min-width: 769px) {
+  #not-only .background,
+  #about .background,
+  #donation .background{
+    display: none;
   }
 }
