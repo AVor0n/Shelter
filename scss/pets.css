@@ -8,57 +8,37 @@ html {
 }
 
 .slider {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px 40px;
   padding: 60px 0;
 }
 
 .paginator {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .paginator .btn {
-  font-family: 'Georgia';
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 115%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #292929;
   background-color: transparent;
 }
-
 .paginator .nobtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #f1cdb3;
-  font-family: 'Georgia';
+  font-family: "Georgia", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -71,12 +51,11 @@ html {
   width: 52px;
   height: 52px;
 }
-
 .paginator .btn:hover:not(:disabled) {
   background-color: #fddcc4;
 }
-
 .paginator .btn:disabled {
   color: #cdcdcd;
 }
+
 /*# sourceMappingURL=pets.css.map */

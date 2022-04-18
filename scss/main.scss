@@ -31,18 +31,17 @@ html {
     text-decoration: none;
   }
   &__title {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-size: 32px;
     line-height: 110%;
     letter-spacing: 0.06em;
     margin: 2px 0 8px;
-    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
   }
 
   &__subtitle {
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
@@ -83,7 +82,7 @@ html {
 
   &__link {
     text-decoration: none;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -100,10 +99,6 @@ html {
 
   .wrapper {
     padding: 163px 0 243px;
-    background: url('./../assets/img/start-screen-puppy.png');
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 698px 728px;
   }
 
   .content {
@@ -125,17 +120,18 @@ html {
   .btn {
     letter-spacing: 0.05em;
   }
+  .background{
+    .background{
+      background: url('./../assets/img/start-screen-puppy.png') no-repeat right bottom;
+      width:698px;
+      height: 728px;
+      background-size: cover;
+    }
+  }
 }
 
 #about {
   padding: 80px 0 84px;
-
-  .wrapper {
-    background: url('./../assets/img/about-pets.png');
-    background-repeat: no-repeat;
-    background-position: 175px 0;
-    background-size: 300px 408px;
-  }
 
   .content {
     max-width: 430px;
@@ -203,9 +199,9 @@ html {
     transition: all 0.3s;
 
     &:hover {
-      box-shadow: 0px 2px 15px 15px rgba(13, 13, 13, 0.04);
+      box-shadow: 0 2px 15px 15px rgba(13, 13, 13, 0.04);
       .btn {
-        @extend .btn:hover;
+        @extend .btn, :hover;
       }
     }
   }
@@ -255,7 +251,8 @@ html {
     margin-top: 55px;
     margin-bottom: 0;
     padding: 0;
-    gap: 120px;
+    flex-wrap: wrap;
+    gap: 55px 120px;
     justify-content: center;
 
     &__item {
@@ -277,13 +274,6 @@ html {
   padding: 80px 0 100px;
   background-color: #f6f6f6;
 
-  .wrapper {
-    background: url('./../assets/img/donation-dog.png');
-    background-repeat: no-repeat;
-    background-position: 143px 11px;
-    background-size: 505px 261px;
-  }
-
   .content {
     max-width: 380px;
     margin-left: auto;
@@ -296,8 +286,7 @@ html {
 
   .title {
     color: #545454;
-    margin: 0;
-    margin-top: 2px;
+    margin: 2px 0 0;
   }
   .subtitle {
     color: #545454;
@@ -315,6 +304,7 @@ html {
       background: #fddcc4;
       cursor: pointer;
     }
+
     .cardnum-notification {
       opacity: 0;
       pointer-events: none;
@@ -376,7 +366,7 @@ html {
     padding: 0;
   }
   &__link {
-    font-family: 'Georgia';
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
