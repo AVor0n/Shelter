@@ -74,3 +74,31 @@ html {
     display: none;
   }
 }
+
+@media(max-width: 760px){
+  #our-friends{
+    padding-bottom: 42px;
+  }
+  .line{
+    background-color: #000;
+  }
+  .slider{
+    grid-template-columns: repeat(1, 1fr);
+    gap : 30px 40px;
+    padding-top: 41px;
+    padding-bottom: 42px;
+  }
+  .slider__card:nth-child(4),
+  .slider__card:nth-child(5),
+  .slider__card:nth-child(6),
+  .slider__card:nth-child(7),
+  .slider__card:nth-child(8){
+    display: none;
+  }
+  .btn--circle{
+    position: static;
+  }
+  .paginator{
+    gap: 10px;
+  }
+}
