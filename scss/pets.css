@@ -79,4 +79,16 @@ html {
 .paginator .btn:disabled {
   color: #cdcdcd;
 }
+
+@media (max-width: 768px) {
+  .slider {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+  .slider__card:nth-child(7),
+  .slider__card:nth-child(8) {
+    display: none;
+  }
+}
 /*# sourceMappingURL=pets.css.map */
