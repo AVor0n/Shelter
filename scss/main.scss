@@ -382,11 +382,12 @@ html {
     justify-content: space-between;
 
     div:nth-child(2) {
-      margin-left: -40px;
+      margin-left: -23px;
     }
   }
 
   .title {
+    max-width: 300px;
     padding-top: 15px;
     color: #ffffff;
     margin: 0;

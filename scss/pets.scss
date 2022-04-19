@@ -1,5 +1,5 @@
 html {
-  margin-top: 0;
+  margin-top: 2px;
 }
 
 .header {
@@ -59,10 +59,15 @@ html {
   }
 }
 
-@media(max-width:768px){
+@media(max-width:1260px){
+  #our-friends{
+    padding-bottom: 77px;
+  }
   .slider{
     grid-template-columns: repeat(2, 1fr);
-    gap : 30px 20px;
+    gap : 30px 40px;
+    padding-top: 28px;
+    padding-bottom: 40px;
   }
   .slider__card:nth-child(7),
   .slider__card:nth-child(8){

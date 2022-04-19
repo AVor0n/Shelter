@@ -833,9 +833,10 @@ html {
   justify-content: space-between;
 }
 .footer .wrapper div:nth-child(2) {
-  margin-left: -40px;
+  margin-left: -23px;
 }
 .footer .title {
+  max-width: 300px;
   padding-top: 15px;
   color: #ffffff;
   margin: 0;
