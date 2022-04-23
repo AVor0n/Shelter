@@ -315,4 +315,37 @@
       left: 0;
     }
   }
+  .modal {
+    .wrapper {
+      gap: 0;
+    }
+    .content {
+      max-width: 240px;
+      padding: 10px;
+    }
+
+    .btn--circle:first-child{
+      left: auto;
+    }
+    .title{
+      margin-top: 0;
+      text-align: center;
+    }
+    .subtitle {
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    .img {
+      display: none;
+    }
+    .list{
+      margin-bottom: 0;
+    }
+  }
 }

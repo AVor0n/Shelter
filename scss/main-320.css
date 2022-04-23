@@ -2,11 +2,9 @@
   html {
     margin: 0;
   }
-
   .wrapper {
     max-width: 300px;
   }
-
   .header {
     top: 30px;
   }
@@ -14,8 +12,13 @@
     padding: 0;
   }
   .header .burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 8px;
     margin-right: 43px;
     margin-top: -4px;
@@ -26,11 +29,9 @@
     width: 30px;
     background-color: #F1CDB3;
   }
-
   .nav {
     display: none;
   }
-
   #not-only {
     padding: 0;
   }
@@ -43,13 +44,17 @@
     margin: 0 auto;
   }
   #not-only .title {
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #ffffff;
@@ -72,7 +77,6 @@
     margin-top: 105px;
     margin-left: auto;
   }
-
   #about {
     padding: 42px 0;
   }
@@ -86,20 +90,24 @@
   #about .title {
     margin: 0 auto;
     max-width: 250px;
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
   }
   #about .paragraph {
     margin: 24px auto;
-    font-family: "Arial";
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -115,70 +123,73 @@
     height: 353px;
     margin: 41px auto 0;
   }
-
   #our-friends {
     padding: 42px 0;
   }
   #our-friends .title {
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
   }
-
   .slider {
     position: relative;
     gap: 12px;
   }
-
   .slider__wrapper {
     max-width: 270px;
     padding: 40px 0 115px;
   }
-
   .slider__container {
     gap: 40px;
   }
-
   .btn--circle {
     position: absolute;
     top: 496px;
   }
-
   .btn--circle:first-child {
     left: 43px;
   }
-
   .btn--circle:last-child {
     right: 43px;
   }
-
   #help {
     padding: 42px 0;
   }
   #help .title {
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
   }
   #help .help-list {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 30px;
     margin-top: 37px;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     padding: 0 5px;
   }
   #help .help-list__item {
@@ -190,18 +201,21 @@
     height: 50px;
   }
   #help .help-list__item-title {
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
   }
-
   #donation {
     padding: 42px 0;
   }
@@ -209,18 +223,24 @@
     background: none;
   }
   #donation .content {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 24px;
   }
   #donation .title {
     margin: 0 auto;
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
@@ -229,13 +249,17 @@
     letter-spacing: 0;
   }
   #donation .card-num {
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 110%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #545454;
     letter-spacing: 0.06em;
   }
@@ -249,41 +273,49 @@
   #donation .paragraph {
     margin-top: -4px;
     max-width: 280px;
-    font-family: "Arial";
+    font-family: 'Arial';
     font-style: italic;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: justify;
     color: #b2b2b2;
   }
-
   .footer {
     padding-top: 30px;
   }
   .footer .title {
     max-width: 250px;
     margin: 0 auto;
-    font-family: "Georgia";
+    font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 130%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #fff;
   }
   .footer .wrapper {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     left: 0;
     gap: 24px;
   }
   .footer a.link {
-    font-family: "Georgia", serif;
+    font-family: 'Georgia', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -291,7 +323,9 @@
     letter-spacing: 0.06em;
     color: #f1cdb3;
     max-width: none;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer div:nth-child(2) li:first-child {
     margin-right: 7px;
@@ -309,6 +343,35 @@
     height: 269px;
     left: 0;
   }
+  .modal .wrapper {
+    gap: 0;
+  }
+  .modal .content {
+    max-width: 240px;
+    padding: 10px;
+  }
+  .modal .btn--circle:first-child {
+    left: auto;
+  }
+  .modal .title {
+    margin-top: 0;
+    text-align: center;
+  }
+  .modal .subtitle {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .modal .desc {
+    margin-bottom: 24px;
+    text-align: justify;
+  }
+  .modal .img {
+    display: none;
+  }
+  .modal .list {
+    padding-left: 1px;
+    margin-bottom: 0;
+  }
 }
-
 /*# sourceMappingURL=main-320.css.map */
