@@ -151,7 +151,7 @@
     padding: 40px 0 115px;
   }
   .slider__container {
-    gap: 40px;
+    width: 270px;
   }
   .btn--circle {
     position: absolute;
@@ -370,7 +370,6 @@
     display: none;
   }
   .modal .list {
-    padding-left: 1px;
     margin-bottom: 0;
   }
 }

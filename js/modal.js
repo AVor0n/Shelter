@@ -1,5 +1,5 @@
 import data from './../data/pets.json' assert { type: 'json' };
-const cards = document.querySelectorAll('.slider__card');
+const slider = document.querySelector('.slider');
 const modal = document.querySelector('.modal');
 const closeBtn = modal.querySelector('.btn');
 
@@ -26,13 +26,12 @@ function fillCardData(card) {
   });
 }
 
-cards.forEach(
-  card =>
-    (card.onclick = () => {
-      fillCardData(card);
-      openModal();
-    }),
-);
+slider.addEventListener('click', e => {
+  const card = e.target;
+  if(!card.classList.contains('slider__card')) return;
+  fillCardData(card);
+  openModal();
+})
 
 document.addEventListener('click', e => e.target.classList.contains('modal') && closeModal());
 closeBtn.onclick = () => closeModal();
