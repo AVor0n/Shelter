@@ -14,6 +14,40 @@ html {
   padding: 60px 0;
 }
 
+.flipper__container{
+  perspective: 1000px;
+}
+
+.flipper{
+  transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+  width: 270px;
+  height: 435px;
+}
+
+.flipper__container .flipper {
+  transform: rotateY(0deg);
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.front {
+	z-index: 2;
+}
+
+.back {
+	transform: rotateY(180deg);
+  background-color: silver;
+}
+
 .paginator {
   display: flex;
   gap: 20px;

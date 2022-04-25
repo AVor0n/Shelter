@@ -1,5 +1,5 @@
-import {init} from './slider.js';
+import {init as initSlider} from './slider.js';
 import './modal.js';
 import './copier.js';
 
-init();
+initSlider();

@@ -16,6 +16,46 @@ html {
   padding: 60px 0;
 }
 
+.flipper__container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.flipper {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+  width: 270px;
+  height: 435px;
+}
+
+.flipper__container .flipper {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.front, .back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: silver;
+}
+
 .paginator {
   display: -webkit-box;
   display: -ms-flexbox;
