@@ -26,7 +26,6 @@ window.addEventListener(('resize'), () => {
 })
 
 export function init() {
-  console.log(countVisibleCards);
   visibleCards = getNewSlideData();
   currentSlide = createSlide(visibleCards);
 }
