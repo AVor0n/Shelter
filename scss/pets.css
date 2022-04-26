@@ -2,9 +2,8 @@ html {
   margin-top: 2px;
 }
 
-.header {
-  position: static;
-  padding: 27px 0;
+#our-friends {
+  padding-top: 200px;
 }
 
 .slider {
@@ -36,7 +35,8 @@ html {
           transform: rotateY(0deg);
 }
 
-.front, .back {
+.front,
+.back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   position: absolute;
@@ -139,10 +139,23 @@ html {
 
 @media (max-width: 760px) {
   #our-friends {
+    padding-top: 150px;
     padding-bottom: 42px;
   }
   .burger--dark .line {
     background-color: #000;
+  }
+  .burger__wrapper.open .burger--dark .line {
+    background-color: #f1cdb3;
+  }
+  .burger__wrapper.open .logo__title {
+    color: #f1cdb3;
+  }
+  .burger__wrapper.open .logo__subtitle {
+    color: #fff;
+  }
+  .nav.open .nav__link {
+    color: #FAFAFA;
   }
   .slider {
     -ms-grid-columns: (1fr)[1];

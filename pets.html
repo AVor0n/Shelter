@@ -14,33 +14,37 @@
   <body>
     <header class="header" id="header">
       <div class="wrapper">
-        <a href="./index.html" class="logo__link">
-          <div class="logo header__logo logo--dark">
-            <h1 class="logo__title">Cozy House</h1>
-            <span class="logo__subtitle">Shelter for pets in Boston</span>
+        <div class="burger__wrapper">
+          <a href="./index.html" class="logo__link">
+            <div class="logo header__logo logo--dark">
+              <h1 class="logo__title">Cozy House</h1>
+              <span class="logo__subtitle">Shelter for pets in Boston</span>
+            </div>
+          </a>
+          <div class="burger burger--dark">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
           </div>
-        </a>
+        </div>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="./index.html" class="link nav__link link--dark">About the shelter</a>
+              <a href="./index.html" class="link nav__link link--dark"
+                >About the shelter</a
+              >
             </li>
             <li class="nav__item">
               <a href="./pets.html" class="link nav__link link--dark link--active">Our pets</a>
             </li>
             <li class="nav__item">
-              <a href="./index.html#help" class="link nav__link link--dark">Help the shelter</a>
+              <a href="#help" class="link nav__link link--dark">Help the shelter</a>
             </li>
             <li class="nav__item">
               <a href="#footer" class="link nav__link link--dark">Contacts</a>
             </li>
           </ul>
         </nav>
-        <div class="burger burger--dark">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
       </div>
     </header>
 
@@ -156,5 +160,6 @@
     </div>
     <script src="./js/paginator.js" type="module"></script>
     <script src="./js/modal.js" type="module"></script>
+    <script src="./js/burger.js" type="module"></script>
   </body>
 </html>

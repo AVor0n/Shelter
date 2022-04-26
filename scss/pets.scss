@@ -1,12 +1,9 @@
 html {
   margin-top: 2px;
 }
-
-.header {
-  position: static;
-  padding: 27px 0;
+#our-friends{
+  padding-top: 200px;
 }
-
 .slider {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -14,14 +11,14 @@ html {
   padding: 60px 0;
 }
 
-.flipper__container{
+.flipper__container {
   perspective: 1000px;
 }
 
-.flipper{
+.flipper {
   transition: 1s;
-	transform-style: preserve-3d;
-	position: relative;
+  transform-style: preserve-3d;
+  position: relative;
   width: 270px;
   height: 435px;
 }
@@ -30,21 +27,22 @@ html {
   transform: rotateY(0deg);
 }
 
-.front, .back {
-	backface-visibility: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
 }
 
 .front {
-	z-index: 2;
+  z-index: 2;
 }
 
 .back {
-	transform: rotateY(180deg);
+  transform: rotateY(180deg);
   background-color: silver;
 }
 
@@ -93,32 +91,45 @@ html {
   }
 }
 
-@media(max-width:1260px){
-  #our-friends{
+@media (max-width: 1260px) {
+  #our-friends {
     padding-bottom: 77px;
   }
-  .slider{
+  .slider {
     grid-template-columns: repeat(2, 1fr);
-    gap : 30px 40px;
+    gap: 30px 40px;
     padding-top: 28px;
     padding-bottom: 40px;
   }
   .slider__card:nth-child(7),
-  .slider__card:nth-child(8){
+  .slider__card:nth-child(8) {
     display: none;
   }
 }
 
-@media(max-width: 760px){
-  #our-friends{
+@media (max-width: 760px) {
+  #our-friends {
+    padding-top: 150px;
     padding-bottom: 42px;
   }
-  .burger--dark .line{
+  .burger--dark .line {
     background-color: #000;
   }
-  .slider{
+  .burger__wrapper.open .burger--dark .line {
+    background-color: #f1cdb3;
+  }
+  .burger__wrapper.open .logo__title {
+    color: #f1cdb3;
+  }
+  .burger__wrapper.open .logo__subtitle {
+    color: #fff;
+  }
+  .nav.open .nav__link {
+    color: #FAFAFA;
+  }
+  .slider {
     grid-template-columns: repeat(1, 1fr);
-    gap : 30px 40px;
+    gap: 30px 40px;
     padding-top: 41px;
     padding-bottom: 42px;
   }
@@ -126,13 +137,13 @@ html {
   .slider__card:nth-child(5),
   .slider__card:nth-child(6),
   .slider__card:nth-child(7),
-  .slider__card:nth-child(8){
+  .slider__card:nth-child(8) {
     display: none;
   }
-  .btn--circle{
+  .btn--circle {
     position: static;
   }
-  .paginator{
+  .paginator {
     gap: 10px;
   }
 }
