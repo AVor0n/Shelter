@@ -25,3 +25,5 @@ links.forEach(link =>
 burgerWrapper.addEventListener('click', () => {
   burgerWrapper.classList.contains('open') ? close() : open();
 });
+
+nav.addEventListener('click', () => close())
