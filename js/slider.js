@@ -5,13 +5,28 @@ const slideContainer = document.querySelector('.slider__container');
 const cardWidth = 270;
 const cardGap = 90;
 const sliderPadding = 50;
-const countVisibleCards =
+let countVisibleCards =
   document.body.clientWidth <= 760 ? 1 : document.body.clientWidth <= 1260 ? 2 : 3;
-const slideWidth = (cardWidth + cardGap) * countVisibleCards - cardGap + sliderPadding;
+let slideWidth = (cardWidth + cardGap) * countVisibleCards - cardGap + sliderPadding;
 let visibleCards = [];
 let currentSlide;
 
+window.addEventListener(('resize'), () => {
+  const newCountVisibleCards = document.body.clientWidth <= 760 ? 1 : document.body.clientWidth <= 1260 ? 2 : 3;
+  if(countVisibleCards !== newCountVisibleCards){
+    countVisibleCards = newCountVisibleCards;
+    currentSlide = 0;
+    visibleCards = [];
+    slideWidth = (cardWidth + cardGap) * countVisibleCards - cardGap + sliderPadding;
+    for(const it of slideContainer.children){
+      it.remove()
+    }
+    init();
+  }
+})
+
 export function init() {
+  console.log(countVisibleCards);
   visibleCards = getNewSlideData();
   currentSlide = createSlide(visibleCards);
 }

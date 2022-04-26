@@ -3,17 +3,33 @@ import data from './../data/pets.json' assert { type: 'json' };
 const slider = document.querySelector('.slider');
 const [startBtn, prevBtn, nextBtn, endBtn] = document.querySelectorAll('.btn--circle');
 const pageIndicator = document.querySelector('.nobtn');
-const pagesData = [];
+let pagesData = [];
 let currentPage = 0;
-const countPages =
+let countPages =
   document.body.clientWidth <= 760 ? 16 : document.body.clientWidth <= 1260 ? 8 : 6;
-const countCards = 48 / countPages;
+let countCards = 48 / countPages;
 
-init(countPages);
+init();
 startBtn.onclick = () => setPage(0);
 prevBtn.onclick = () => setPage(currentPage - 1);
 nextBtn.onclick = () => setPage(currentPage + 1);
 endBtn.onclick = () => setPage(countPages - 1);
+
+window.addEventListener('resize', () => {
+  const newCountPages = document.body.clientWidth <= 760 ? 16 : document.body.clientWidth <= 1260 ? 8 : 6;
+  console.log(newCountPages);
+  if(countPages !== newCountPages){
+    pagesData = [];
+    countPages = newCountPages;
+    countCards = 48 / countPages;
+    Array.from(slider.children).forEach(it => it.remove())
+    if(currentPage > countPages-1){
+      currentPage = countPages -1;
+    }
+    init();
+    setPage(currentPage)
+  }
+})
 
 function setPage(page) {
   updatePage(page);
@@ -32,7 +48,7 @@ function setPage(page) {
   }
 }
 
-function init(countPages) {
+function init() {
   for (let i = 0; i < countPages; i++) {
     data.sort(() => Math.random() - 0.5);
     pagesData.push(data.slice(0, countCards));
@@ -59,10 +75,12 @@ function createCard(name) {
 function updatePage(page) {
   slider.querySelectorAll('.flipper').forEach((card, idx) => {
     const img = card.querySelector('.slider__card-img');
+    const title = card.querySelector('.slider__card-title');
     const angle = card.style.transform.match(/\d+/);
     card.style.transform = `rotateY(${+angle + 360}deg)`;
     setTimeout(() => {
       img.src = pagesData[page][idx].img;
+      title.textContent = pagesData[page][idx].name;
     }, 400);
   });
 }
