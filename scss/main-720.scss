@@ -156,12 +156,23 @@
       padding: 0 9px;
     }
 
+    .title{
+      margin-top: 0;
+    }
     .subtitle {
+      margin-top: 0;
       margin-bottom: 20px;
     }
 
     .desc {
-      margin-bottom: 20px;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+    .list{
+      margin: 0;
+    }
+    .item{
+      margin-bottom: 5px;
     }
     .img {
       width: 350px;

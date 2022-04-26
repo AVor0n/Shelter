@@ -425,11 +425,18 @@ html {
   }
 }
 
-.hidden {
-  visibility: hidden;
+.modal.hidden {
+  // visibility: hidden;
+  pointer-events: none;
+  background: transparent;
+  .wrapper {
+    transform: scale(0);
+  }
 }
 
 .modal {
+  pointer-events: all;
+  transition: all 0.5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -446,6 +453,8 @@ html {
     border-radius: 9px;
     display: flex;
     align-items: center;
+    transition: all 0.5s;
+    transform: scale(1) rotate(360deg);
     gap: 9px;
   }
 

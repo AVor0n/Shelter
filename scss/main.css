@@ -1040,11 +1040,20 @@ html {
   border-width: 0;
 }
 
-.hidden {
-  visibility: hidden;
+.modal.hidden {
+  pointer-events: none;
+  background: transparent;
+}
+
+.modal.hidden .wrapper {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .modal {
+  pointer-events: all;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   position: fixed;
   top: 0;
   left: 0;
@@ -1072,6 +1081,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(1) rotate(360deg);
+          transform: scale(1) rotate(360deg);
   gap: 9px;
 }
 

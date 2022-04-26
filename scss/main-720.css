@@ -223,11 +223,22 @@ h5 {
     max-width: 260px;
     padding: 0 9px;
   }
+  .modal .title {
+    margin-top: 0;
+  }
   .modal .subtitle {
+    margin-top: 0;
     margin-bottom: 20px;
   }
   .modal .desc {
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 13px;
+  }
+  .modal .list {
+    margin: 0;
+  }
+  .modal .item {
+    margin-bottom: 5px;
   }
   .modal .img {
     width: 350px;
