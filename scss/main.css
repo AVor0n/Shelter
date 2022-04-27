@@ -1072,6 +1072,7 @@ html {
 }
 
 .modal .wrapper {
+  cursor: default;
   position: relative;
   background: #fafafa;
   border-radius: 9px;

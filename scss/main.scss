@@ -426,7 +426,6 @@ html {
 }
 
 .modal.hidden {
-  // visibility: hidden;
   pointer-events: none;
   background: transparent;
   .wrapper {
@@ -448,6 +447,7 @@ html {
   justify-content: center;
 
   .wrapper {
+    cursor: default;
     position: relative;
     background: #fafafa;
     border-radius: 9px;

@@ -1,16 +1,26 @@
 import data from './../data/pets.json' assert { type: 'json' };
 const slider = document.querySelector('.slider');
 const modal = document.querySelector('.modal');
+const wrapper = document.querySelector('.modal .wrapper');
 const closeBtn = modal.querySelector('.btn');
 
 function closeModal() {
   modal.classList.add('hidden');
   document.body.style.overflowY = 'auto';
+  disableHoverEffect();
+  wrapper.removeEventListener('mouseenter', disableHoverEffect);
+  wrapper.removeEventListener('mouseleave', enableHoverEffect);
 }
 
-function openModal() {
+function openModal(e) {
   modal.classList.remove('hidden');
   document.body.style.overflowY = 'hidden';
+  wrapper.addEventListener('mouseenter', disableHoverEffect);
+  wrapper.addEventListener('mouseleave', enableHoverEffect);
+  setTimeout(() => {
+    const elUnderMouse = document.elementFromPoint(e.pageX, e.pageY);
+    if (elUnderMouse.classList.contains('modal')) enableHoverEffect();
+  }, 500);
 }
 
 function fillCardData(card) {
@@ -28,10 +38,18 @@ function fillCardData(card) {
 
 slider.addEventListener('click', e => {
   const card = e.target;
-  if(!card.classList.contains('slider__card')) return;
+  if (!card.classList.contains('slider__card')) return;
   fillCardData(card);
-  openModal();
-})
+  openModal(e);
+});
+
+const enableHoverEffect = () => hoverEffect(true);
+const disableHoverEffect = () => hoverEffect(false);
+
+function hoverEffect(enable) {
+  closeBtn.style.background = enable ? '#fddcc4' : null;
+  modal.style.cursor = enable ? 'pointer' : 'default';
+}
 
 document.addEventListener('click', e => e.target.classList.contains('modal') && closeModal());
 closeBtn.onclick = () => closeModal();
