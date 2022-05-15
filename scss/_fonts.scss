@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('./../assets/fonts/Georgia-Italic.woff2') format('woff2'),
+    url('./../assets/fonts/Georgia-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('./../assets/fonts/Georgia-Bold.woff2') format('woff2'),
+    url('./../assets/fonts/Georgia-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('./../assets/fonts/Georgia.woff2') format('woff2'),
+    url('./../assets/fonts/Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('./../assets/fonts/Arial-ItalicMT.woff2') format('woff2'),
+    url('./../assets/fonts/Arial-ItalicMT.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('./../assets/fonts/ArialMT.woff2') format('woff2'),
+    url('./../assets/fonts/ArialMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h2 {
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+}
+
+h3 {
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+h5 {
+  font-family: 'Georgia', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.paragraph--l {
+  font-family: 'Arial', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.paragraph--s {
+  font-family: 'Arial', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+}
